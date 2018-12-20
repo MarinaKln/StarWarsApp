@@ -1,0 +1,33 @@
+.character-item {
+	background: $color_white;
+	box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+	border-radius: 4px;
+	overflow: hidden;
+
+	&__img {
+		min-height: 245.76px;
+
+		&--dark {
+			background: url("/dev/images/darth.svg") center no-repeat $color_dark;
+			background-size: 46px 46px;
+		}
+
+		&--light {
+			background: url("/dev/images/light-saber.svg") center no-repeat $color_light_side;
+			background-size: 65px 65px;
+		}
+	}
+
+	&__info-wrap {
+		padding: 16px 24px;
+	}
+
+	&__name {
+		font-weight: 500;
+		line-height: 24px;
+	}
+
+	&__info-item {
+		color: $color_light_text;
+	}
+}

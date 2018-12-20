@@ -1,0 +1,25 @@
+.loading {
+	position: relative;
+	min-height: 200px;
+
+	&::after {
+		content: '';
+		display: block;
+		width: 110%;
+		height: 100%;
+		background: url('/dev/images/lightsaber.gif') center 100px no-repeat $color_white;
+		background-size: 65px 65px;
+		position: absolute;
+		left: -5%;
+		top: 0;
+		transition: .3s;
+		transition-delay: .3s;
+		opacity: 0;
+	}
+
+	&.is-load {
+		&::after {
+			opacity: 1;
+		}
+	}
+}

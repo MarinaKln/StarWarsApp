@@ -1,0 +1,50 @@
+.filter {
+	grid-column-start: 2;
+	grid-column-end: 7;
+	padding-top: 32px;
+
+	&__list-item {
+		text-transform: capitalize;
+		cursor: pointer;
+		display: inline-flex;
+		align-items: center;
+		transition: .3s;
+		padding-right: 30px;
+		
+		&:not(.active):hover {
+			color: $color_dark;
+			
+			.checkbox {
+				box-shadow: 0 0 8px rgba(0, 0, 0, 0.3);
+			}
+		}
+	}
+
+	&__list-text {
+		margin-left: 10px;
+	}
+
+	&__list-input {
+		visibility: hidden;
+		opacity: 0;
+		position: absolute;
+		width: 0;
+		height: 0;
+
+		& + .checkbox {
+			width: 16px;
+			height: 16px;
+			border-radius: 50%;
+			border: 1px solid $color_dark;
+			position: relative;
+			box-sizing: border-box;
+			display: block;
+			box-shadow: 0 4px 4px rgba(0, 0, 0, 0.1);
+			transition: .3s;
+		}
+
+		&:checked + .checkbox {
+			background: $color_dark;
+		}
+	}
+}

@@ -1,0 +1,23 @@
+.sidebar {
+	grid-row-start: 1;
+	grid-row-end: 4;
+	background: rgba(18, 18, 50, 0.15);
+	padding: 30px 0;
+	text-align: center;
+	min-height: 100vh;
+
+	&__nav {
+		padding-top: 78px;
+	}
+
+	&__nav-item {
+		margin: 0;
+		padding: 15px 0;
+	}
+}
+
+@media all and (max-width: $screen-md) {
+	.sidebar {
+		display: none;
+	}
+}

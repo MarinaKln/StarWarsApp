@@ -1,0 +1,15 @@
+.header {
+	grid-column-start: 2;
+	grid-column-end: 7;
+	display: flex;
+	align-items: center;
+	background: rgba(18, 18, 50, 0.2);
+	padding: 0 100px;
+}
+
+@media all and (max-width: $screen-md) {
+	.header {
+		grid-column-start: 1;
+		padding: 0 20px;
+	}
+}
