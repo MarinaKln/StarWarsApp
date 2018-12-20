@@ -8,12 +8,12 @@
 		min-height: 245.76px;
 
 		&--dark {
-			background: url("/dev/images/darth.svg") center no-repeat $color_dark;
+			background: url("/images/darth.svg") center no-repeat $color_dark;
 			background-size: 46px 46px;
 		}
 
 		&--light {
-			background: url("/dev/images/light-saber.svg") center no-repeat $color_light_side;
+			background: url("/images/light-saber.svg") center no-repeat $color_light_side;
 			background-size: 65px 65px;
 		}
 	}
